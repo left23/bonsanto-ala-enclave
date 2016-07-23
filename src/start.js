@@ -1,5 +1,5 @@
 // (function(){
-	var game = new Phaser.Game(640, 480, Phaser.CANVAS, 'world');
+	var game = new Phaser.Game(800, 500, Phaser.CANVAS, 'world', null, true, true, null);
 	var states = {
 		'Boot': EPT.Boot,
 		'Preloader': EPT.Preloader,
@@ -13,5 +13,5 @@
 	};
 	for(var state in states)
 		game.state.add(state, states[state]);
-	game.state.start('Boot');
+	    game.state.start('Boot');
 // })();

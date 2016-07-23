@@ -1,9 +1,29 @@
-
-
 jQuery( document ).ready(function() {
     getData();
     getData2();
+    getChapter();
 });
+
+
+(function() {
+
+    var x = Math.floor((Math.random() * 10) + 1);
+
+    function getChapter() {
+        console.log(x);
+        jQuery.getJSON("chapterOne.json", function (chapterObj) {
+            chapterToPrint = chapterObj.paragraphs[0].paragraph1;
+        });
+    }
+
+})();
+
+
+function chapterText() {
+    console.log("chapterText");
+    jQuery("#ui-chapter").html("<div class='chapter'>" +chapterToPrint+ "</div>");
+    console.log(chapterToPrint);
+}
 
 
 function getData() {
@@ -13,10 +33,13 @@ function getData() {
     });
 }
 
+
 function uiOverlay() {
     console.log("uiOverlay");
     jQuery("#ui-overlay").html("<div class='message'>" +messageToPrint+ "</div>");
 }
+
+
 
 function getData2() {
     jQuery.getJSON("exampleObj.json", function(messagesObj2) {
@@ -25,11 +48,18 @@ function getData2() {
     });
 }
 
+
 function uiOverlay2() {
     console.log("uiOverlay2");
     jQuery("#ui-overlay").html("<div class='message'>" +messageToPrint2+ "</div>");
 }
 
+
 function removeOverlay() {
-    jQuery("#startScreen").hide();
+    jQuery(".message").hide();
+}
+
+
+function removeChapter() {
+    jQuery(".chapter").hide();
 }

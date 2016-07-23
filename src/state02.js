@@ -16,6 +16,8 @@ bonsanto.State002.prototype = {
         plateBgState002.anchor.setTo(0.5, 0.5);
         plateBgState002.scale.setTo(1, 1);
 
+        removeOverlay();
+
         var evilBono = this.add.sprite(382, 242, 'evilBono');
         evilBono.anchor.setTo(0.5, 0.5);
         evilBono.scale.setTo(1, 1);
@@ -40,20 +42,17 @@ bonsanto.State002.prototype = {
 
         //tween.onStart.add(started, this);
         tween.onComplete.add(completed, this);
+
     }
 
 };
 
 
 function started() {
-
     console.log("tween started");
-
 }
 
 function completed() {
-
     console.log("tween complete");
     this.state.start('State003');
-
 }

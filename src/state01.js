@@ -34,6 +34,7 @@ bonsanto.State001.prototype = {
         obj001.events.onInputDown.add(listener, this);
 
         uiOverlay();
+        removeChapter();
 
         var buttonBack = this.add.button(this.world.width-20, game.world.height-20, 'button-back', this.clickBack, this, 1, 0, 2);
         buttonBack.anchor.set(1,1);
@@ -59,9 +60,6 @@ function listener () {
 
     // initiate second state onInputDown in create function
     this.state.start('State002');
-
-    uiOverlay2();
-    removeOverlay();
 
 }
 

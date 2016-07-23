@@ -7,32 +7,69 @@
 	<meta name="description" content="Enclave Phaser Template" />
 	<style>
 
-    body{margin:0;padding:0;
-        position: relative;}
+    body{
+        margin:0;
+        padding:0;
+        background: black;
+        position: relative;
+    }
 
     #world {
+        max-width: 800px;
+        margin: 0 auto;
         position: relative;
-        z-index: 1;
     }
+
     #ui-overlay {
         position: absolute;
-        bottom: 10%;
-        left: 0;
-        z-index: 2;
-        width: 100%;
-        height: auto;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        overflow: hidden;
+        text-align: left;
+        color: #8CE04C;
+        box-sizing: border-box;
+        padding: 316px 0 0 32px;
+        max-width: 80%;
     }
 
     .message {
-        width: 100%;
-        height: 100%;
+        display: inline-block;
         background-color: #03442E;
-        padding: 10px;
+        background-color: rgba(3,68,46,0.9);
+        border-radius: 18px 0 0 18px;
         font-family: Arial, sans-serif;
         font-size: 24px;
+        padding: 18px 32px 18px 64px;
+        -webkit-box-shadow: inset 0px 0px 48px 2px rgba(0,0,0,0.75);
+        -moz-box-shadow: inset 0px 0px 48px 2px rgba(0,0,0,0.75);
+        box-shadow: inset 0px 0px 48px 2px rgba(0,0,0,0.75);
+    }
+
+    #ui-chapter {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        overflow: hidden;
         text-align: left;
         color: #8CE04C;
-        padding: 48px;
+        box-sizing: border-box;
+        padding: 32px;
+    }
+
+    .chapter {
+        display: inline-block;
+        background-color: #03442E;
+        background-color: rgba(3,68,46,0.9);
+        border-radius: 6px;
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+        line-height: 24px;
+        padding: 32px;
+        -webkit-box-shadow: inset 0px 0px 48px 2px rgba(0,0,0,0.75);
+        -moz-box-shadow: inset 0px 0px 48px 2px rgba(0,0,0,0.75);
+        box-shadow: inset 0px 0px 48px 2px rgba(0,0,0,0.75);
     }
 
     </style>
@@ -54,11 +91,12 @@
 
 </head>
 <body>
-<a href="https://github.com/EnclaveGames/Enclave-Phaser-Template/"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
 <script src="src/start.js"></script>
 
     <div id="world">
         <div id="ui-overlay">
+        </div>
+        <div id="ui-chapter">
         </div>
     </div>
 

@@ -4,6 +4,8 @@ EPT.Achievements = function(game) {};
 
 EPT.Achievements.prototype = {
 	create: function(){
+
+        this.add.sprite(0, 0, 'background');
 		var fontAchievements = { font: "32px Arial", fill: "#000" };
 		var textAchievements = this.add.text(100, 75, 'Achievements screen', fontAchievements);
 

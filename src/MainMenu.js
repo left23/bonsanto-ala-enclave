@@ -17,9 +17,9 @@ EPT.MainMenu.prototype = {
 		var buttonAchievements = this.add.button(20, this.world.height-20, 'button-achievements', this.clickAchievements, this, 1, 0, 2);
 		buttonAchievements.anchor.set(0,1);
 
-		var fontHighscore = { font: "32px Arial", fill: "#000" };
-		var textHighscore = this.add.text(this.world.width*0.5, this.world.height-50, 'Highscore: '+highscore, fontHighscore);
-		textHighscore.anchor.set(0.5,1);
+		//var fontHighscore = { font: "32px Arial", fill: "#fff" };
+		//var textHighscore = this.add.text(this.world.width*0.5, this.world.height-50, 'Highscore: '+highscore, fontHighscore);
+		//textHighscore.anchor.set(0.5,1);
 
 		EPT._manageAudio('init',this);
 
@@ -37,6 +37,8 @@ EPT.MainMenu.prototype = {
         buttonEnclave.scale.setTo(1,1);
         buttonAchievements.scale.setTo(1,1);
 
+        removeOverlay();
+
 	},
 	clickAudio: function() {
 		if(!EPT._audioStatus) {
@@ -48,7 +50,7 @@ EPT.MainMenu.prototype = {
 		if(!EPT._audioStatus) {
 			EPT._soundClick.play();
 		}
-		window.top.location.href = 'http://emc23.com/';
+		window.top.location.href = 'http://eclecticmeme.com/index.php';
 	},
 	clickStart: function() {
 		if(EPT._audioStatus) {

@@ -31,7 +31,7 @@ EPT.Boot.prototype = {
 		this.load.image('loading-progress', 'img/loading-progress.png');
 	},
 	create: function(){
-		this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL
+		this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
 		this.scale.pageAlignVertically = true;
 		this.state.start('Preloader');
 	}

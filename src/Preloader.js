@@ -20,12 +20,13 @@ EPT.Preloader.prototype = {
 };
 EPT.Preloader.resources = {
 	'image': [
-		['background', 'img/bonsanto-state001.jpg'],
+		['background', 'img/bonsanto-state001.png'],
 		['title', 'img/title.png'],
-		['logo-emc', 'img/fnord_128x128.png'],
+		//['logo-emc', 'img/fnord_128x128.png'],
+		['logo-emc', 'img/pyramid_24.png'],
 		['clickme', 'img/clickme.png'],
 		['overlay', 'img/overlay.png'],
-        ['plateBgState001', 'img/bonsanto-state001.jpg'],
+        ['plateBgState001', 'img/bonsanto-state001.png'],
         ['plateBgState002', 'img/bonsanto-state002.jpg'],
         ['bono', 'img/bono.png'],
         ['bono60', 'img/bono-60.png'],
@@ -33,8 +34,10 @@ EPT.Preloader.resources = {
         ['clickMe', 'img/clickMe.png']
 	],
 	'spritesheet': [
-		['button-start', 'img/button-start.png', 180, 180],
-		['button-continue', 'img/button-continue.png', 180, 180],
+		//['button-start', 'img/button-start.png', 180, 180],
+		['button-start', 'img/Meffert_Pyraminx_Mixed.png', 180, 180],
+		//['button-continue', 'img/button-continue.png', 180, 180],
+        ['button-continue', 'img/Meffert_Pyraminx.png', 180, 180],
 		['button-mainmenu', 'img/button-mainmenu.png', 180, 180],
 		['button-restart', 'img/button-tryagain.png', 180, 180],
 		['button-achievements', 'img/button-achievements.png', 110, 110],
