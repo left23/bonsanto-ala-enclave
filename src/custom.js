@@ -5,18 +5,14 @@ jQuery( document ).ready(function() {
 });
 
 
-(function() {
-
-    var x = Math.floor((Math.random() * 10) + 1);
-
-    function getChapter() {
-        console.log(x);
-        jQuery.getJSON("chapterOne.json", function (chapterObj) {
-            chapterToPrint = chapterObj.paragraphs[0].paragraph1;
-        });
-    }
-
-})();
+function getChapter() {
+    // round down to nearest integer and range is 3, as we only have 3 paragraphs
+    var x = Math.floor((Math.random() * 2));
+    console.log(x);
+    jQuery.getJSON("chapterOne.json", function (chapterObj) {
+        chapterToPrint = chapterObj.paragraphs[0]['paragraph'+x];
+    });
+}
 
 
 function chapterText() {
