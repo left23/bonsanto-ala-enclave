@@ -35,7 +35,8 @@ EPT.Preloader.resources = {
 	],
 	'spritesheet': [
 		//['button-start', 'img/button-start.png', 180, 180],
-		['button-start', 'img/Meffert_Pyraminx_Mixed.png', 180, 180],
+		['button-start', 'img/hand.png', 252, 380],
+		//['button-start', 'img/Meffert_Pyraminx_Mixed.png', 180, 180],
 		//['button-continue', 'img/button-continue.png', 180, 180],
         ['button-continue', 'img/Meffert_Pyraminx.png', 180, 180],
 		['button-mainmenu', 'img/button-mainmenu.png', 180, 180],

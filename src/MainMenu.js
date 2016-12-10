@@ -33,7 +33,7 @@ EPT.MainMenu.prototype = {
 		this.add.tween(buttonAchievements).to({y: this.world.height-20}, 500, Phaser.Easing.Exponential.Out, true);
 
         // scale everything
-        buttonStart.scale.setTo(1,1);
+        buttonStart.scale.setTo(0.5,0.5);
         buttonEnclave.scale.setTo(1,1);
         buttonAchievements.scale.setTo(1,1);
 
