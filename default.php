@@ -3,58 +3,102 @@
 		<script src="/components/com_battle/includes/jquery-2.0.3.min.js"></script>
 		<!-- Phaser -->
         <script src="/components/com_battle/includes/phaser.js"></script>
-        <script src="custom.js"></script>
+        <script src="src/phaser-arcade-physics.2.4.4.min.js"></script>
+        <script src="src/storage.js"></script>
+        <script src="src/Boot.js"></script>
+        <script src="src/Preloader.js"></script>
+        <script src="src/MainMenu.js"></script>
+        <script src="src/Achievements.js"></script>
+        <script src="src/Story.js"></script>
+        <script src="src/Game.js"></script>
 
-    <style>
-      body {
-        margin: 0;
-      }
+        <!-- bonsanto -->
+        <script src="src/jquery-2.0.3.min.js"></script>
+        <script src="src/custom.js"></script>
+        <script src='src/state01.js'></script>
+        <script src='src/state02.js'></script>
+        <script src='src/state03.js'></script>
 
-      #world {
-        position: relative;
-      }
+        <style>
 
-      #startScreen > *,
-      #ui-overlay > * {
-        position: absolute;
-        box-sizing: border-box;
-      }
+            body{
+                margin:0;
+                padding:0;
+                position: relative;
+            }
 
-      .message {
-        top: 360px;
-        left: 0;
-        width: 100%;
-        height: 140px;
-        background-color: #03442E;
-        padding: 10px;
-        font-family: Arial, sans-serif;
-        font-size: 24px;
-        text-align: left;
-        color: #8CE04C;
-      }
+            #world {
+                max-width: 800px;
+                margin: 0 auto;
+                position: relative;
+            }
 
-    </style>
+            #ui-overlay {
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: 1;
+                overflow: hidden;
+                text-align: left;
+                color: #8CE04C;
+                box-sizing: border-box;
+                padding: 316px 0 0 32px;
+                max-width: 80%;
+            }
+
+            .message {
+                display: inline-block;
+                background-color: #03442E;
+                background-color: rgba(3,68,46,0.9);
+                border-radius: 18px 0 0 18px;
+                font-family: Arial, sans-serif;
+                font-size: 24px;
+                padding: 18px 32px 18px 64px;
+                -webkit-box-shadow: inset 0px 0px 48px 2px rgba(0,0,0,0.75);
+                -moz-box-shadow: inset 0px 0px 48px 2px rgba(0,0,0,0.75);
+                box-shadow: inset 0px 0px 48px 2px rgba(0,0,0,0.75);
+            }
+
+            #ui-chapter {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                overflow: hidden;
+                text-align: left;
+                color: #8CE04C;
+                box-sizing: border-box;
+                padding: 32px;
+            }
+
+            .chapter {
+                display: inline-block;
+                background-color: #03442E;
+                background-color: rgba(3,68,46,0.9);
+                border-radius: 6px;
+                font-family: Arial, sans-serif;
+                font-size: 18px;
+                line-height: 24px;
+                padding: 32px;
+                -webkit-box-shadow: inset 0px 0px 48px 2px rgba(0,0,0,0.75);
+                -moz-box-shadow: inset 0px 0px 48px 2px rgba(0,0,0,0.75);
+                box-shadow: inset 0px 0px 48px 2px rgba(0,0,0,0.75);
+            }
+
+        </style>
 	</head>
-	
-	<body>
-			
-		<div id="world">
-		</div>
 
-    <div id="startScreen">
+    <body>
+    <script src="src/start.js"></script>
+
+    <div id="world">
+        <div id="ui-overlay">
+        </div>
+        <div id="ui-chapter">
+        </div>
     </div>
 
-    <div id="ui-overlay">
-    </div>
-
-    <script src='state001.js'></script>
-    <script src='state002.js'></script>
-    <script src='state003.js'></script>
-    <script src='script.js'></script>
-
-
-
-	</body>
+    </body>
 </html>
 
 
